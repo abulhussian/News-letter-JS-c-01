@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>newsletter signup with success message</title>
+  <link rel="icon" href="./assets/images/favicon-32x32.png">
+</head>
+
+<body class="bg-paleBlue flex flex-col  justify-center py-0 m-0  w-screen ">
+  <!-- main conatiner -->
+  <div
+    class="container-main flex md:flex-row flex-col justify-between md:mt-20 bg-white max-w-sm md:max-w-2xl h-auto mx-auto md:rounded-xl md:p-5  overflow-y-hidden ">
+    <!-- mobile image  -->
+    <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile"
+      class="md:hidden  sm:block max-w-screen rounded-b-md -top-5">
+    <!-- content container -->
+    <div class="content flex flex-col p-3">
+      <!-- heading -->
+      <div class="heading ">
+        <h1 class="font-semibold text-darkNavy font-sans text-3xl md:pt-5 ">Stay updated!</h1>
+      </div>
+      <!-- sub text -->
+      <div class="text text-darkNavy mt-5 items-center">
+        <!-- text -->
+        <p class="text-darkNavy w-60 md:w-96">Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <div class="flex flex-col justify-center">
+          <!-- points 1 -->
+          <div class=" tick flex flex-row  items-center mt-3 gap-4 ">
+            <img src="./assets/images/icon-list.svg" alt="">
+            <p class="text-darkNavy text-xs">Product discovery and building what matters</p>
+          </div>
+          <!-- points 2 -->
+          <div class="tick flex  mt-3 items-center gap-4 ">
+            <img src="./assets/images/icon-list.svg" alt="">
+            <p class="text-darkNavy text-xs">Measuring to ensure updates are a success</p>
+          </div>
+          <!-- points 3 -->
+          <div class="tick flex flex-row items-center mt-3 gap-4">
+            <img src="./assets/images/icon-list.svg" alt="">
+            <p class="text-darkNavy text-xs">And much more!</p>
+          </div>
+        </div>
+      </div>
+      <!-- btn & text & input-->
+      <div class="btn mt-5 ">
+        <!-- text -->
+        <p class=" Email-normal text-darkBlue font-semibold">Email Address</p>
+        <p class="hidden Email-wrong text-red-400 font-semibold mx-auto text-right mr-20">Valid Email required</p>
+        <!-- input -->
+        <input type="email" name="email" class=" email-input  rounded-lg border-black-1 px-9
+           py-2 md:px-7 md:py-2 border-2 mt-2" placeholder="email123@gmail.com">
+
+        <!-- button -->
+        <button
+          class="btn-main rounded-lg hover:bg-gradient-to-l from-orange to-pink px-11 py-2 md:px-8 md:py-2 bg-darkBlue text-white mt-2">subscribe
+          to monthly
+          newsletter</button>
+      </div>
+    </div>
+    <!-- hero image -->
+    <div class="image">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop"
+        class="w-96 h-96 md:block hidden sm:hidden">
+    </div>
+
+  </div>
+  <div class="conatiner-tq bg-white max-w-lg felx flex-col justify-centerp-10 mx-auto mt-10 p-10 rounded-lg hidden">
+    <img src="./assets/images/icon-success.svg" alt="icon-success" class="mt-10">
+    <h1 class="text-4xl text-darkBlue w-72 mt-5 font-semibold font-sans">Thanks for subscribing!</h1>
+    <p class="text-darkblue w-96 mt-5">A confirmation email has been sent to ash@loremcompany.com. Please open it and
+      click
+      the button inside to confirm your subscription.</p>
+    <button
+      class="dismiss-btn rounded-lg hover:bg-gradient-to-l from-orange to-pink px-20 py-2 bg-darkBlue text-white mt-5">Dismiss
+      message</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
